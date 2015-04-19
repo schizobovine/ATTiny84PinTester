@@ -742,7 +742,7 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="FRAME1" library="A_butts" package="DUMMY" value="" x="0.5" y="0.5">
+<element name="FRAME1" library="A_butts" package="DUMMY" value="" x="0.5" y="0.5" smashed="yes">
 <attribute name="VERSION" value="v01" x="0.5" y="0.5" size="0.5" layer="27" ratio="12" display="off"/>
 <attribute name="DESIGNER" value="Nobody" x="0.5" y="0.5" size="0.5" layer="27" ratio="12" display="off"/>
 </element>
@@ -752,11 +752,11 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MF" value="3M" x="16" y="25.5" size="0.5" layer="27" ratio="12" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="1247151" x="16" y="25.5" size="0.5" layer="27" ratio="12" rot="R270" display="off"/>
 <attribute name="NAME" x="24.034" y="42.5" size="0.8" layer="25" font="vector" ratio="12" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="16" y="25.5" size="1" layer="27" font="vector" ratio="16" rot="SR270" align="center"/>
+<attribute name="VALUE" x="16" y="25.5" size="1" layer="21" font="vector" ratio="16" rot="SR270" align="center"/>
 </element>
 <element name="R1" library="A_butts" package="RESISTOR-AXIAL-PTH-5.08MM" value="10k" x="2" y="16.75" smashed="yes" rot="R90">
 <attribute name="NAME" x="2" y="20.306" size="0.4" layer="25" font="vector" ratio="12" align="bottom-center"/>
-<attribute name="VALUE" x="1.25" y="13.194" size="0.4" layer="27" font="vector" ratio="12" align="top-center"/>
+<attribute name="VALUE" x="1.25" y="13.194" size="0.4" layer="21" font="vector" ratio="12" align="top-center"/>
 </element>
 <element name="ON" library="A_butts" package="LED3MM-LESSSILK" value="LED3MM-LESS" x="26" y="3" smashed="yes" rot="R180">
 <attribute name="NAME" x="26" y="0.8" size="0.5" layer="25" font="vector" ratio="15" align="top-center"/>
@@ -809,19 +809,25 @@ Please make sure your boards conform to these design rules.</description>
 <element name="RB2" library="A_butts" package="1X06" value="RESISTOR-BUS-5PTH" x="2" y="23.75" smashed="yes" rot="R90">
 <attribute name="NAME" x="1.984" y="22.643" size="0.6" layer="25" font="vector" ratio="12" align="top-center"/>
 </element>
-<element name="R3" library="A_butts" package="RESISTOR-AXIAL-PTH-5.08MM" value="330R" x="25" y="9.5" rot="R90"/>
+<element name="R3" library="A_butts" package="RESISTOR-AXIAL-PTH-5.08MM" value="330R" x="25" y="9.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="25" y="5.944" size="0.4" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="25" y="13.056" size="0.4" layer="21" font="vector" ratio="12" rot="R180" align="top-center"/>
+</element>
 <element name="R2" library="A_butts" package="RESISTOR-AXIAL-PTH-5.08MM" value="330R" x="30" y="19.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="30.806" y="19.5" size="0.4" layer="25" font="vector" ratio="12" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="29.194" y="19.5" size="0.4" layer="27" font="vector" ratio="12" rot="R270" align="top-center"/>
+<attribute name="VALUE" x="29.194" y="19.5" size="0.4" layer="21" font="vector" ratio="12" rot="R270" align="top-center"/>
 </element>
-<element name="C1" library="A_butts" package="C025-024X044" value="0.1uF" x="7" y="39.5" rot="R90"/>
+<element name="C1" library="A_butts" package="C025-024X044" value="0.1uF" x="7" y="39.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="7" y="37.214" size="0.4064" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="7" y="41.786" size="0.4064" layer="21" font="vector" ratio="12" align="bottom-center"/>
+</element>
 <element name="C2" library="A_butts" package="E2-5" value="10uF" x="28.75" y="7.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="26.583" y="9.5" size="0.4064" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="27.333" y="7.5" size="0.4064" layer="27" font="vector" ratio="12" rot="R270" align="top-center"/>
+<attribute name="VALUE" x="27.333" y="7.5" size="0.4064" layer="21" font="vector" ratio="12" rot="R270" align="top-center"/>
 </element>
-<element name="U$2" library="A_butts" package="CC-BY-SA-4.0-NO-URL" value="" x="8.5" y="2.25" rot="MR0"/>
-<element name="U$3" library="A_butts" package="OSHWLOGO_BOT_0.2_A" value="" x="20.75" y="13.5"/>
-<element name="U$1" library="A_butts" package="COW_SMALL_METAL" value="" x="16" y="40" rot="MR0"/>
+<element name="U$2" library="A_butts" package="CC-BY-SA-4.0-NO-URL" value="" x="8.5" y="2.25" smashed="yes" rot="MR0"/>
+<element name="U$3" library="A_butts" package="OSHWLOGO_BOT_0.2_A" value="" x="20.75" y="13.5" smashed="yes"/>
+<element name="U$1" library="A_butts" package="COW_SMALL_METAL" value="" x="16" y="40" smashed="yes" rot="MR0"/>
 </elements>
 <signals>
 <signal name="D6">
