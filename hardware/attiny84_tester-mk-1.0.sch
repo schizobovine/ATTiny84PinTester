@@ -14112,7 +14112,10 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </class>
 </classes>
 <parts>
-<part name="FRAME1" library="A_butts" deviceset="FRAME-LETTER" device="NO_PACKAGE"/>
+<part name="FRAME1" library="A_butts" deviceset="FRAME-LETTER" device="NO_PACKAGE">
+<attribute name="DESIGNER" value="sean@yak.net"/>
+<attribute name="VERSION" value="1.0"/>
+</part>
 <part name="IC1" library="A_butts" deviceset="ZIF14" device="" value="ATTiny84"/>
 <part name="R1" library="A_butts" deviceset="RESISTOR" device="PTH-AXIAL-5.08MM" value="10k"/>
 <part name="ON" library="A_butts" deviceset="LED" device="3MM-LESS"/>
